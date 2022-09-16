@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/Register</title>
+    <link rel="stylesheet" href="loginPg.css">
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>
+<body> 
+    <section id="header">
+        <a href=""><img src="img/logo.png" class="logo" alt="" width="140" height="70"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loginPg.html">Login/Register</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+                <li id="lg-bag"><a href=""><i class="fas fa-cart-arrow-down"></i>
+                </a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-cart-arrow-down"></i>
+            </a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <div class="heroo">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button  onclick="login()"  type="button" class="toogle-btn">log In</button>
+                <button onclick="Register()" type="button" class="toogle-btn">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/1stop.ai/"><i class="fab fa-facebook-f icon1"></i></a>
+                <a href="https://www.instagram.com/1stop.ai/"><i class="fab fa-instagram icon2"></i></a>
+                <a href="https://www.instagram.com/1stop.ai/"><i class="fab fa-twitter icon3"></i></a>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn">log In</button>
+            </form>
+            <form   id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" checked class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+
+    <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("btn");
+
+        function Register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+
+    </script>
+    <script src="project1.js"></script>
+</body>
+</html>
